@@ -14,3 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('book', 'BookController@index');
+
+Route::get('book/add', 'BookController@add');
+Route::post('book/add', 'BookController@create');
+
+Route::get('book/edit', 'BookController@edit');
+Route::post('book/edit', 'BookController@update');
+
+Route::get('book/del', 'BookController@delete');
+Route::post('book/del', 'BookController@remove');
