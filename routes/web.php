@@ -23,3 +23,8 @@ Route::post('book/edit', 'BookController@update');
 
 Route::get('book/del', 'BookController@delete');
 Route::post('book/del', 'BookController@remove');
+
+Route::get('book/find', 'BookController@find');
+Route::post('book/find', 'BookController@search');
+
+Route::get('book/rakutenapi', 'BookController@rakutenapi');
