@@ -60,6 +60,7 @@ class BookController extends Controller
         return view('book.find',$param);
     }
 
+    //apiメソッド
     public function rakutenapi(){
         $url = "https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=1045799994551880282&keyword=%E6%9C%AC&hits=10&page=10&sort=sales";
 
